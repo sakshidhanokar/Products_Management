@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: learning-spring-boot
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Productss
+    username: postgres
+    password: Sakshii@2530
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8081

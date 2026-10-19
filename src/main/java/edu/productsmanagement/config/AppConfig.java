@@ -1,0 +1,17 @@
+package edu.productsmanagement.config;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("edu.productmanagement")
+public class AppConfig {
+
+    @Bean
+    ModelMapper getMapper() {
+        return new ModelMapper();
+    }
+
+}
